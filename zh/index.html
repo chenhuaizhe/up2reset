@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Up2Reset — macOS 菜单栏久坐提醒，到点全屏挡住你</title>
+  <meta name="description" content="Up2Reset 是给长时间写代码、设计、写作的人用的 macOS 菜单栏应用。坐太久时，它会盖住所有屏幕，倒计时逼你站起来活动。没有账号，数据不离开这台 Mac。">
+  <link rel="canonical" href="https://up2reset.com/zh/">
+  <link rel="alternate" hreflang="en" href="https://up2reset.com/">
+  <link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/">
+  <meta property="og:title" content="Up2Reset — 工作太久时，提醒你起来恢复一下">
+  <meta property="og:description" content="macOS 菜单栏久坐提醒。到点覆盖所有屏幕，站起来，动几分钟，再坐下。">
+  <meta property="og:url" content="https://up2reset.com/zh/">
+  <meta property="og:image" content="https://up2reset.com/assets/icon.png">
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="wrap topbar">
+    <a class="brand" href="/zh/">
+      <img src="/assets/icon.png" width="36" height="36" alt="">
+      Up2Reset
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="/faq/">FAQ</a>
+      <a href="/" aria-current="false">English</a>
+      <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+      <a href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12">Mac App Store</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero">
+      <div>
+        <h1>坐太久了。<br>屏幕自己会变暗。</h1>
+        <p class="lede">Up2Reset 待在 Mac 菜单栏里。你一埋进工作，它就在所有显示器上盖住倒计时：站起来，伸展一下，再坐下。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12">去 Mac App Store 下载</a>
+          <a class="btn" href="/faq/" style="background:#fff;color:inherit;border:1px solid var(--line)">看常见问题</a>
+        </div>
+        <p class="note">免费开始。需要 macOS 14.6+。没有账号。商店里目前显示为 Up2Stretch。</p>
+      </div>
+      <div class="stage" aria-label="休息遮罩预览">
+        <div class="menubar">
+          <span>Up2Reset  47:12</span>
+          <span>距离休息 12m</span>
+        </div>
+        <div class="overlay">
+          <h2>该站起来活动了</h2>
+          <p class="count" id="count">05:00</p>
+          <p class="prompt">站起来，伸展身体，深呼吸一次</p>
+          <div class="overlay-actions">
+            <span class="btn btn-ghost">跳过</span>
+            <span class="btn btn-primary">我动过了</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <h2>系统久坐提醒很容易划掉。盖住屏幕就不容易。</h2>
+          <p>macOS 可以弹一下。你会把它滑掉，继续敲。Up2Reset 是给「忘了自己还有身体」的那一小时用的：所有显示器变暗，短休息倒计时，完事就让开。</p>
+        </div>
+        <ol class="beats">
+          <li>
+            <time>00:00</time>
+            <div>开始一段工作。计时器在菜单栏，不占 Dock。</div>
+          </li>
+          <li>
+            <time>58:00</time>
+            <div>想要的话，休息前几分钟会有系统通知。</div>
+          </li>
+          <li>
+            <time>60:00</time>
+            <div>所有屏幕被盖住。站起来。动一动。如果开了工作日志，写一句刚才在做什么。</div>
+          </li>
+          <li>
+            <time>05:00</time>
+            <div>确认已走动。遮罩关掉。下一段开始。</div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>它具体做什么</h2>
+        <ul class="facts">
+          <li>
+            <strong>菜单栏计时</strong>
+            暂停、继续、重置，看今日工时和休息次数，不用离开当前 App。
+          </li>
+          <li>
+            <strong>全屏遮罩，所有显示器</strong>
+            休息中途插拔屏幕，遮罩会按同一场休息重建，而不是消失。
+          </li>
+          <li>
+            <strong>跳过，过一会儿再叫</strong>
+            开会就跳过。它会按设定的延迟再来，而不是下午都不管了。
+          </li>
+          <li>
+            <strong>合盖或锁屏会停表</strong>
+            人不在座位上，不该把这段算成工作，回来也不该立刻被全屏打断。
+          </li>
+          <li>
+            <strong>遮罩上可以写一句工作备忘</strong>
+            下一轮坐下时，至少还记得刚才做到哪。
+          </li>
+          <li>
+            <strong>开机自启</strong>
+            一个要你每天记得打开的久坐提醒，等于没有提醒。
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>免费和 Pro</h2>
+        <p>免费版已经能打断久坐。Pro 给要自定义节奏、并且想在本机看报表的人。</p>
+        <div class="plans">
+          <article class="plan">
+            <h3>免费</h3>
+            <p class="price">$0</p>
+            <ul>
+              <li>30 / 45 / 60 分钟工作间隔</li>
+              <li>全屏遮罩和倒计时</li>
+              <li>休息前通知</li>
+              <li>跳过并稍后提醒</li>
+              <li>休眠 / 锁定检测</li>
+              <li>今日统计</li>
+            </ul>
+          </article>
+          <article class="plan">
+            <h3>Pro</h3>
+            <p class="price">年订或买断，App 内购买</p>
+            <ul>
+              <li>任意分钟数的工作间隔</li>
+              <li>键鼠闲置检测</li>
+              <li>更多跳过和预警选项</li>
+              <li>7 / 30 / 365 天本地报表</li>
+              <li>购买走 Apple，Up2Reset 看不到卡号</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <h2>数据不离开这台 Mac。</h2>
+        <p>没有账号，没有分析 SDK，没有第三方库。闲置检测用系统闲置时长，不要辅助功能权限，更不是全局键盘监听。<a href="/privacy/">隐私政策</a>。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Up2Reset。开发者 陈源。Mac App Store 当前显示名为 Up2Stretch。</p>
+      <nav>
+        <a href="/faq/">FAQ</a>
+        <a href="/support/">支持</a>
+        <a href="/privacy/">隐私</a>
+        <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+        <a href="https://www.bigbeefit.com/">BigBeeFit</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/assets/site.js"></script>
+</body>
+</html>

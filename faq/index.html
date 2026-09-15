@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Up2Reset FAQ — menu bar sit reminder for Mac</title>
+  <meta name="description" content="FAQ for Up2Reset, a native macOS menu bar app that covers every screen when you have been sitting too long. Privacy, Pro, idle detection, and App Store name explained.">
+  <link rel="canonical" href="https://up2reset.com/faq/">
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Up2Reset?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Up2Reset is a native macOS menu bar app for knowledge workers who sit for long stretches. It times a work block and covers every display when it is time to stand up and move."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I launched it. Where did the window go?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no Dock window. Look at the menu bar in the top-right of the screen for the timer. If the menu bar is crowded, macOS may hide it behind the extra items chevron."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Up2Reset collect or upload my data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Timer settings, work notes, today's counts, and reports stay on your Mac. There is no account, no analytics SDK, and no third-party networking for user data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it need Accessibility permission?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Do not grant Accessibility. Idle detection uses the system idle clock (seconds since last keyboard or mouse event). It does not install a global event tap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is this different from Stretchly, Time Out, or the Mac stand reminder?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stretchly is Electron. Time Out and other break timers are in the same job, but Up2Reset is a native Swift menu bar app with a full-screen overlay on every display, local-only reports, and no account. Apple Watch stand rings measure standing hours; they do not cover your monitors when you are mid-code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does the App Store say Up2Stretch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The shipping Mac App Store listing is still named Up2Stretch. Up2Reset is the product brand on this site. Same app, bundle id com.tool.Up2Stretch, App Store id 6447865036."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is in Pro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Custom work intervals, extra skip and pre-warning options, keyboard/mouse idle detection, and 7/30/365 day reports stored on the Mac. Annual subscription or lifetime unlock, both through Apple."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "The overlay appeared the moment I came back to my desk. Why?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The hard timer still counts while you are sitting without typing, including reading or watching video. If you physically left, enable Pro idle detection or pause before you go. Sleep and screen lock already pause the free timer."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap topbar">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" width="36" height="36" alt="">
+      Up2Reset
+    </a>
+    <nav class="nav">
+      <a href="/faq/" aria-current="page">FAQ</a>
+      <a href="/zh/">中文</a>
+      <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+      <a href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12">Mac App Store</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <div class="page-hero">
+      <h1>FAQ</h1>
+      <p class="lede">Short answers. If yours is missing, email from the <a href="/support/">support page</a>.</p>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>What is Up2Reset?</summary>
+        <p>A native macOS menu bar app for people who sit too long while coding, designing, writing, or studying. It times a work block and covers every screen when you should stand up.</p>
+      </details>
+      <details>
+        <summary>I launched it. Where did the window go?</summary>
+        <p>There is no Dock window. Look at the menu bar, top-right, for the timer. If macOS is hiding extra items, drag it out of the chevron.</p>
+      </details>
+      <details>
+        <summary>Does it collect my data?</summary>
+        <p>No. Settings, notes, today’s counts, and reports stay on this Mac. No account. No analytics SDK. <a href="/privacy/">Privacy policy</a>.</p>
+      </details>
+      <details>
+        <summary>Does it need Accessibility permission?</summary>
+        <p>No. Do not grant it. Idle detection reads the system idle clock. It does not install a global key or mouse tap.</p>
+      </details>
+      <details>
+        <summary>How is this different from Stretchly, Time Out, or Apple Watch Stand?</summary>
+        <p>Stretchly is Electron. Time Out is a peer in the same job. Up2Reset is native Swift, a full-screen overlay on every display, and local-only data. Watch Stand rings count standing hours; they will not cover your IDE when you are 90 minutes into a diff.</p>
+      </details>
+      <details>
+        <summary>Why does the App Store say Up2Stretch?</summary>
+        <p>That is the current listing name. Same app: bundle id <code>com.tool.Up2Stretch</code>, Apple ID 6447865036. This site uses the Up2Reset brand.</p>
+      </details>
+      <details>
+        <summary>What macOS version do I need?</summary>
+        <p>macOS 14.6 or later. Older copy that says 13.2 is stale.</p>
+      </details>
+      <details>
+        <summary>What is in Pro?</summary>
+        <p>Any work interval, extra skip/warning options, keyboard and mouse idle detection, and 7 / 30 / 365 day reports on disk. Annual or lifetime, both via Apple. Restore purchases in Settings → Pro with the same Apple ID.</p>
+      </details>
+      <details>
+        <summary>The overlay hit me the second I sat back down.</summary>
+        <p>Reading and watching still count as sitting — that is the point of the hard timer. If you actually left, pause first, or turn on Pro idle detection. Sleep and lock already pause the free timer.</p>
+      </details>
+      <details>
+        <summary>Can I skip a break?</summary>
+        <p>Yes. Skip postpones the overlay; it does not delete the rest of the day. Default delay is about 10 minutes. Pro can tune this.</p>
+      </details>
+      <details>
+        <summary>Can I change the overlay background?</summary>
+        <p>Yes, as of 1.2.1. Pick an image and opacity in Settings so the countdown stays readable.</p>
+      </details>
+      <details>
+        <summary>Will my reports follow me to a new Mac?</summary>
+        <p>No. Everything is local. There is no iCloud sync on purpose.</p>
+      </details>
+      <details>
+        <summary>How do I quit?</summary>
+        <p>Open the menu bar panel and click <strong>Quit Up2Reset</strong>. Closing Settings does not quit the app — it is a menu bar accessory.</p>
+      </details>
+    </div>
+    <section class="prose">
+      <h2>中文摘要</h2>
+      <p>启动后看菜单栏，不看 Dock。不收集数据，不要给辅助功能权限。商店当前名字是 Up2Stretch，和 Up2Reset 是同一个 App。Pro 是自定义间隔、闲置检测和本地报表。</p>
+    </section>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Up2Reset</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

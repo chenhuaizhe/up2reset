@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Up2Reset — Mac menu bar reminder to stand up and reset</title>
+  <meta name="description" content="Up2Reset is a native macOS menu bar app that covers every screen when you have been sitting too long. Stand up, stretch, reset, then get back to work. No account. Data stays on your Mac.">
+  <link rel="canonical" href="https://up2reset.com/">
+  <link rel="alternate" hreflang="en" href="https://up2reset.com/">
+  <link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://up2reset.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Up2Reset — sit less, reset at work">
+  <meta property="og:description" content="A macOS menu bar timer that covers every display when it is time to stand up.">
+  <meta property="og:url" content="https://up2reset.com/">
+  <meta property="og:image" content="https://up2reset.com/assets/icon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Up2Reset",
+        "alternateName": "Up2Stretch",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "macOS 14.6",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "A native macOS menu bar app that reminds knowledge workers to stand up and take a short movement break.",
+        "url": "https://up2reset.com/",
+        "downloadUrl": "https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12",
+        "author": {
+          "@type": "Person",
+          "name": "Yuan Chen"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Up2Reset?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Up2Reset is a native macOS menu bar app for people who sit too long while coding, designing, writing, or studying. It times your work session and covers every screen when it is time to stand up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Up2Reset collect my data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Settings, today's summary, work notes, and reports stay on your Mac. There is no account and no analytics SDK."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the Mac App Store listing say Up2Stretch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The current Mac App Store listing is named Up2Stretch. Up2Reset is the product brand. Same app, same developer, same download."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap topbar">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" width="36" height="36" alt="">
+      Up2Reset
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/faq/">FAQ</a>
+      <a href="/zh/">中文</a>
+      <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+      <a href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12">Mac App Store</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero">
+      <div>
+        <h1>Sit too long.<br>The screen goes dim.</h1>
+        <p class="lede">Up2Reset lives in the Mac menu bar. When you disappear into work, it covers every display and asks you to stand up, stretch, and reset.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12">Get it on Mac App Store</a>
+          <a class="btn" href="/faq/" style="background:#fff;color:inherit;border:1px solid var(--line)">Read the FAQ</a>
+        </div>
+        <p class="note">Free to start. macOS 14.6+. No account. Currently listed as Up2Stretch.</p>
+      </div>
+      <div class="stage" aria-label="Break overlay preview">
+        <div class="menubar">
+          <span>Up2Reset  47:12</span>
+          <span>next reset 12m</span>
+        </div>
+        <div class="overlay">
+          <h2>Time to stand up and move</h2>
+          <p class="count" id="count">05:00</p>
+          <p class="prompt">Stand up, stretch your body, and take a deep breath</p>
+          <div class="overlay-actions">
+            <span class="btn btn-ghost">Skip</span>
+            <span class="btn btn-primary">I moved</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <h2>System sit reminders are easy to ignore. A covered screen is not.</h2>
+          <p>macOS can ping you. You swipe it away and keep typing. Up2Reset is for the hour you forget you have a body: it dims every monitor, counts down a short break, then gets out of the way.</p>
+        </div>
+        <ol class="beats">
+          <li>
+            <time>00:00</time>
+            <div>You start a work block. The timer stays in the menu bar, not the Dock.</div>
+          </li>
+          <li>
+            <time>58:00</time>
+            <div>A system notification can warn you a couple of minutes early, if you want it.</div>
+          </li>
+          <li>
+            <time>60:00</time>
+            <div>Every screen is covered. Stand up. Stretch. Write one line about what you were doing, if you use work notes.</div>
+          </li>
+          <li>
+            <time>05:00</time>
+            <div>Confirm you moved. The overlay closes. The next block starts.</div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>What it actually does</h2>
+        <ul class="facts">
+          <li>
+            <strong>Menu bar timer</strong>
+            Pause, continue, reset, and see today’s work time and break count without leaving the app you are in.
+          </li>
+          <li>
+            <strong>Full-screen overlay on every display</strong>
+            Including extra monitors. Hot-plug a screen mid-break and the overlay rebuilds instead of vanishing.
+          </li>
+          <li>
+            <strong>Skip, then get called again</strong>
+            In a meeting? Skip. It comes back after a short delay instead of disappearing for the afternoon.
+          </li>
+          <li>
+            <strong>Sleep and lock pause the clock</strong>
+            Close the lid or lock the Mac, and the work timer waits. You should not be punished for leaving the desk.
+          </li>
+          <li>
+            <strong>Work notes on the overlay</strong>
+            One line: what you were just doing. Useful when the next sitting block starts and your brain is empty.
+          </li>
+          <li>
+            <strong>Launch at login</strong>
+            A sit reminder that you have to remember to open is not a sit reminder.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Free vs Pro</h2>
+        <p>The free app is enough to break a sitting streak. Pro is for people who want a custom rhythm and a local record.</p>
+        <div class="plans">
+          <article class="plan">
+            <h3>Free</h3>
+            <p class="price">$0</p>
+            <ul>
+              <li>30 / 45 / 60 minute work intervals</li>
+              <li>Full-screen overlay and countdown</li>
+              <li>Pre-break notification</li>
+              <li>Skip and remind later</li>
+              <li>Sleep / lock detection</li>
+              <li>Today’s summary</li>
+            </ul>
+          </article>
+          <article class="plan">
+            <h3>Pro</h3>
+            <p class="price">Annual or lifetime, in-app</p>
+            <ul>
+              <li>Any work interval in minutes</li>
+              <li>Keyboard and mouse idle detection</li>
+              <li>More skip and warning options</li>
+              <li>7 / 30 / 365 day local reports</li>
+              <li>Purchases go through Apple. Up2Reset never sees card data.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <h2>Nothing leaves the Mac.</h2>
+        <p>No account. No analytics SDK. No third-party libraries. Idle detection uses a system idle clock, not Accessibility permission, and not a global keylogger. <a href="/privacy/">Privacy policy</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Up2Reset. A Mac app by Yuan Chen. Listed on the App Store as Up2Stretch.</p>
+      <nav>
+        <a href="/faq/">FAQ</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+        <a href="https://www.bigbeefit.com/">BigBeeFit</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/assets/site.js"></script>
+</body>
+</html>

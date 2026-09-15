@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://up2reset.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/"/>
+  </url>
+  <url>
+    <loc>https://up2reset.com/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/"/>
+  </url>
+  <url>
+    <loc>https://up2reset.com/faq/</loc>
+  </url>
+  <url>
+    <loc>https://up2reset.com/privacy/</loc>
+  </url>
+  <url>
+    <loc>https://up2reset.com/support/</loc>
+  </url>
+</urlset>
