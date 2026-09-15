@@ -367,6 +367,58 @@ code {
   letter-spacing: -0.04em;
 }
 
+.guide-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.15rem;
+  margin: 0 0 2.2rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.guide-toc a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.guide-toc a:hover {
+  color: var(--ink);
+}
+
+.guide h2 {
+  scroll-margin-top: 1.2rem;
+}
+
+.callout {
+  max-width: 40rem;
+  margin: 0 0 2rem;
+  padding: 1rem 1.15rem;
+  background: color-mix(in oklab, var(--mint) 18%, var(--cream));
+  border-radius: 0.85rem;
+}
+
+.callout p {
+  margin: 0;
+}
+
+.guide ol {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.guide li + li {
+  margin-top: 0.45rem;
+}
+
+.guide .kbd {
+  font-family: var(--mono);
+  font-size: 0.86em;
+  padding: 0.05em 0.35em;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+}
+
 .prose h2 {
   margin-top: 2rem;
   letter-spacing: -0.03em;

@@ -5,7 +5,7 @@ macOS menu bar app that covers every screen when you have been sitting too long.
 Sit. Forget. Overlay. Stand up. Reset. Continue.
 
 **Download:** [Mac App Store](https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12) (live listing is still **Up2Stretch 1.2.1**; **1.3.0** is in review and will rename it to Up2Reset)  
-**Site:** [up2reset.com](https://up2reset.com)  
+**Site:** [up2reset.com](https://up2reset.com) · [How to use](https://up2reset.com/guide/)  
 **This repo is the public product page**, not the private app source.
 
 ## Why it exists

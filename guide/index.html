@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to use Up2Reset — Mac menu bar sit reminder</title>
+  <meta name="description" content="A short Up2Reset tutorial: find it in the menu bar, survive the first overlay, skip a meeting, pause when you leave, and quit without hunting a Dock icon.">
+  <link rel="canonical" href="https://up2reset.com/guide/">
+  <link rel="alternate" hreflang="en" href="https://up2reset.com/guide/">
+  <link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/guide/">
+  <meta property="og:title" content="How to use Up2Reset">
+  <meta property="og:description" content="Look at the menu bar, not the Dock. Then let it interrupt you once.">
+  <meta property="og:url" content="https://up2reset.com/guide/">
+  <meta property="og:image" content="https://up2reset.com/assets/icon.png">
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to use Up2Reset",
+    "description": "Find the menu bar timer, let the overlay interrupt a sitting streak, then get back to work.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Find the timer",
+        "text": "After launch there is no Dock window. Look in the menu bar at the top-right of the screen."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Turn on launch at login",
+        "text": "Say yes on first launch, or later: menu bar panel → Settings → Launch at login."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Take one real break",
+        "text": "When every screen dims, stand up. Click I moved when you are back. Skip only postpones the overlay."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap topbar">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" width="36" height="36" alt="">
+      Up2Reset
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/guide/" aria-current="page">Guide</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/zh/guide/">Chinese</a>
+      <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+      <a href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12">Mac App Store</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap prose guide">
+    <div class="page-hero">
+      <h1>How to use it</h1>
+      <p class="lede">You do not manage a window. You ignore a timer until the screens go dim. That is the product.</p>
+    </div>
+
+    <div class="callout">
+      <p><strong>Do these three things and you are using it correctly:</strong> find it in the menu bar, leave launch-at-login on, and stand up the first time the overlay hits. Everything else is optional.</p>
+    </div>
+
+    <ul class="guide-toc">
+      <li><a href="#find">After install</a></li>
+      <li><a href="#first-hour">First hour</a></li>
+      <li><a href="#overlay">When the screen dims</a></li>
+      <li><a href="#leave">Meetings and leaving</a></li>
+      <li><a href="#settings">Settings worth touching</a></li>
+      <li><a href="#quit">Quit</a></li>
+    </ul>
+
+    <h2 id="find">1. After you install</h2>
+    <p>Open Up2Reset. <strong>There is no Dock window.</strong> That is not a bug.</p>
+    <ol>
+      <li>Look at the <strong>menu bar</strong>, top-right of the screen. You want a small timer, not an app in the Dock.</li>
+      <li>If you see a <span class="kbd">»</span> chevron (“hidden menu bar items”), drag the timer out of there so it stays visible.</li>
+      <li>Click the timer. A panel opens: elapsed work time, next break, Pause, and Settings.</li>
+    </ol>
+    <p>The live App Store listing is still named Up2Stretch (1.2.1). Same app. 1.3.0 is in review and will rename the listing to Up2Reset.</p>
+
+    <h2 id="first-hour">2. First hour</h2>
+    <ol>
+      <li>On first launch, say yes to <strong>launch at login</strong>. A sit reminder you reopen by hand is not a sit reminder. You can change this later: panel → Settings → Launch at login.</li>
+      <li>Allow <strong>notifications</strong> when macOS asks. That is the optional two-minute warning before the overlay. You can turn the warning off later.</li>
+      <li>Do <strong>not</strong> grant Accessibility. Idle detection (Pro) uses the system idle clock. A global key logger is not part of this app.</li>
+      <li>Leave it running and go back to work. Free intervals are 30 / 45 / 60 minutes. Default is about 60.</li>
+    </ol>
+
+    <h2 id="overlay">3. When every screen dims</h2>
+    <p>That is the break. Stand up. Stretch. Do not swipe it like a banner.</p>
+    <ol>
+      <li>Primary button: <strong>I moved</strong> (Chinese UI: 已走动). That confirms the break and starts the next work block.</li>
+      <li>In a meeting: <strong>Skip</strong> (跳过). The overlay comes back after 10 minutes by default. It does not cancel the rest of the day.</li>
+      <li>If work notes are on, you can type one line about what you were doing. Useful when you sit back down and your brain is empty.</li>
+      <li>Want a break now? Panel → <strong>Start Break</strong>.</li>
+    </ol>
+    <p>In 1.3.0 (in review, not on the store yet) you can require a 3-second hold on Skip / I moved so a stray click does not dismiss it.</p>
+
+    <h2 id="leave">4. Meetings, lunch, and leaving the desk</h2>
+    <ol>
+      <li><strong>Pause</strong> in the panel before a call or a movie. Click <strong>Resume</strong> when you sit down again. If you leave it paused, it will not remind you.</li>
+      <li>Close the lid or lock the Mac: the work timer waits. You should not get punished for walking away.</li>
+      <li>If you come back and the overlay hits immediately, the hard timer still counted while you sat without typing (reading and video count). Pause before you go, or turn on Pro idle detection.</li>
+      <li><strong>Restart Timer</strong> starts the work block from zero. On live 1.2.1 the button still says Reset.</li>
+    </ol>
+
+    <h2 id="settings">5. Settings worth touching</h2>
+    <p>Panel → Settings. Four tabs: Settings, Logs, Reports, Pro.</p>
+    <ol>
+      <li><strong>Remind me after</strong> — 30 / 45 / 60 minutes on the free plan. Start at 45 if 60 is too long to feel.</li>
+      <li><strong>Pre-break warning</strong> — Off, or 2 minutes. Pro adds 1 / 3 / 5.</li>
+      <li><strong>Overlay look</strong> — custom background and opacity, since 1.2.1. Keep the countdown readable.</li>
+      <li><strong>Work notes</strong> — optional one line on the overlay. Logs live on this Mac. Open the Logs tab to browse or share them.</li>
+      <li><strong>Bedtime reminder</strong> and menu-bar scratch notes ship in 1.3.0 (in review). Not Now does not cut the work session you are in. They are not Pro.</li>
+      <li><strong>Pro</strong> is only: any interval, break length 1–60 minutes, extra skip/warning times, keyboard/mouse idle detection, and 7-day / 30-day / this-year reports. Restore purchases in Settings → Pro with the same Apple ID.</li>
+    </ol>
+
+    <h2 id="quit">6. How to quit</h2>
+    <p>Open the menu bar panel and click <strong>Quit</strong>. Closing Settings does nothing — the app is a menu bar accessory. Live 1.2.1 says Quit Up2Stretch; 1.3.0 says Quit Up2Reset.</p>
+    <p>Stuck? <a href="/support/">Support</a> · <a href="/faq/">FAQ</a> · <a href="mailto:nine@bigbeefit.com">nine@bigbeefit.com</a></p>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Up2Reset</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
