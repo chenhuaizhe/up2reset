@@ -4,7 +4,7 @@ macOS menu bar app that covers every screen when you have been sitting too long.
 
 Sit. Forget. Overlay. Stand up. Reset. Continue.
 
-**Download:** [Mac App Store](https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12) (listing name is still **Up2Stretch**)  
+**Download:** [Mac App Store](https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12) (live listing is still **Up2Stretch 1.2.1**; **1.3.0** is in review and will rename it to Up2Reset)  
 **Site:** [up2reset.com](https://up2reset.com)  
 **This repo is the public product page**, not the private app source.
 
@@ -32,7 +32,10 @@ People on a Mac who:
 - Today’s work time and break count
 - Optional work note on the overlay
 - Launch at login
-- Pro: custom intervals, idle detection, 7 / 30 / 365 day **local** reports
+- Custom overlay background and opacity (since 1.2.1)
+- Pro: custom intervals, any break length 1–60 min, idle detection, 7-day / 30-day / this-year **local** reports
+
+**1.3.0 (in App Store review, not live yet):** listing name Up2Reset, bedtime reminder (Not Now / 先不睡 does not cut the current focus), menu bar scratch notes, optional 3-second hold on Skip / I moved, extra languages (en, zh-Hans, zh-Hant, ja, ko, de, fr, es). These are not Pro-gated.
 
 Privacy default: no account, no analytics SDK, no Accessibility permission. Idle detection uses the system idle clock.
 
@@ -56,7 +59,7 @@ Stretchly is Electron. Time Out is a peer. Up2Reset is native, overlay-first, lo
 
 ### Why does the App Store say Up2Stretch?
 
-Same app. Bundle id `com.tool.Up2Stretch`, Apple ID `6447865036`. This brand is Up2Reset.
+Same app. Bundle id `com.tool.Up2Stretch`, Apple ID `6447865036`. This brand is Up2Reset. Live store is still 1.2.1 named Up2Stretch; 1.3.0 is in review and will rename the listing.
 
 ### What macOS version?
 
@@ -64,7 +67,7 @@ Same app. Bundle id `com.tool.Up2Stretch`, Apple ID `6447865036`. This brand is 
 
 ### What is Pro?
 
-Any minute interval, extra skip/warning options, keyboard+mouse idle detection, and local reports. Annual or lifetime, both through Apple. Restore in Settings → Pro.
+Any minute interval, any break length 1–60 min, extra skip/warning options, keyboard+mouse idle detection, and 7-day / 30-day / this-year local reports. Annual or lifetime, both through Apple. Restore in Settings → Pro.
 
 ### The overlay hit me when I sat back down.
 
@@ -78,6 +81,10 @@ Yes. Skip delays the overlay; it does not cancel the rest of the day.
 
 Yes, since 1.2.1: custom background image and opacity.
 
+### What is in 1.3.0?
+
+In review, not on the store yet. Rename to Up2Reset, bedtime reminder, menu-bar scratch notes, optional hold on Skip / I moved, more languages. None of that is Pro.
+
 ### Will reports follow me to a new Mac?
 
 No. Local on purpose. No iCloud sync.
@@ -89,8 +96,9 @@ No. Local on purpose. No iCloud sync.
 | Work interval | 30 / 45 / 60 min | any minutes |
 | Overlay | all displays | same |
 | Sleep / lock pause | yes | same |
+| Break length | 1 / 3 / 5 / 10 / 20 min | 1–60 min |
 | Idle (keyboard / mouse) | — | yes |
-| Reports | today | 7 / 30 / 365 days, on disk |
+| Reports | today | 7-day / 30-day / this year, on disk |
 
 ## Support
 

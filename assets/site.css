@@ -290,6 +290,11 @@ a:hover {
   margin-bottom: 0.2rem;
 }
 
+code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+}
+
 .band {
   background: var(--teal);
   color: var(--cream);
