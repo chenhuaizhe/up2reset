@@ -12,11 +12,32 @@
   </url>
   <url>
     <loc>https://up2reset.com/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/faq/"/>
+  </url>
+  <url>
+    <loc>https://up2reset.com/zh/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/faq/"/>
   </url>
   <url>
     <loc>https://up2reset.com/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/privacy/"/>
+  </url>
+  <url>
+    <loc>https://up2reset.com/zh/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/privacy/"/>
   </url>
   <url>
     <loc>https://up2reset.com/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/support/"/>
+  </url>
+  <url>
+    <loc>https://up2reset.com/zh/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/support/"/>
   </url>
 </urlset>

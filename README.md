@@ -35,7 +35,7 @@ People on a Mac who:
 - Custom overlay background and opacity (since 1.2.1)
 - Pro: custom intervals, any break length 1–60 min, idle detection, 7-day / 30-day / this-year **local** reports
 
-**1.3.0 (in App Store review, not live yet):** listing name Up2Reset, bedtime reminder (Not Now / 先不睡 does not cut the current focus), menu bar scratch notes, optional 3-second hold on Skip / I moved, extra languages (en, zh-Hans, zh-Hant, ja, ko, de, fr, es). These are not Pro-gated.
+**1.3.0 (in App Store review, not live yet):** listing name Up2Reset, bedtime reminder (Not Now does not cut the current focus), menu bar scratch notes, optional 3-second hold on Skip / I moved, extra languages (en, zh-Hans, zh-Hant, ja, ko, de, fr, es). These are not Pro-gated.
 
 Privacy default: no account, no analytics SDK, no Accessibility permission. Idle detection uses the system idle clock.
 
