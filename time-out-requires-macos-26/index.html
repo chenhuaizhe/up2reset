@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time Out requires macOS 26 — Sequoia users and a native alternative</title>
+  <meta name="description" content="Time Out 3.1 needs macOS Tahoe 26. The Mac App Store listing says the same. 2.9.7 still runs on 10.15+. What changed, who is stuck, and a signed overlay that runs on macOS 14.6.">
+  <link rel="canonical" href="https://up2reset.com/time-out-requires-macos-26/">
+  <link rel="alternate" hreflang="en" href="https://up2reset.com/time-out-requires-macos-26/">
+  <link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/time-out-requires-macos-26/">
+  <link rel="alternate" hreflang="x-default" href="https://up2reset.com/time-out-requires-macos-26/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Time Out requires macOS 26">
+  <meta property="og:description" content="Time Out 3.1 is Tahoe-only. Sequoia stays on 2.9.7. A native sit-break overlay still runs on macOS 14.6.">
+  <meta property="og:url" content="https://up2reset.com/time-out-requires-macos-26/">
+  <meta property="og:image" content="https://up2reset.com/assets/icon.png">
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Time Out requires macOS 26",
+    "description": "Time Out 3.1 needs macOS Tahoe. Older Macs stay on 2.9.7. Up2Reset is a signed native overlay on macOS 14.6+.",
+    "url": "https://up2reset.com/time-out-requires-macos-26/",
+    "author": { "@type": "Person", "name": "Yuan Chen" },
+    "publisher": { "@type": "Organization", "name": "Up2Reset" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap topbar">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" width="36" height="36" alt="">
+      Up2Reset
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/guide/">Guide</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/zh/time-out-requires-macos-26/">Chinese</a>
+      <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+      <a href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12&amp;ct=seo-timeout">Mac App Store</a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap prose">
+    <p class="crumbs"><a href="/">Up2Reset</a> / Time Out on Mac</p>
+    <div class="page-hero">
+      <h1>Time Out requires macOS 26</h1>
+      <p class="lede">The current Time Out release is Tahoe-only. If you are on Sequoia or Sonoma, the store listing will not install 3.x. That is a version floor, not a bug in your Mac.</p>
+    </div>
+
+    <h2>What you are seeing</h2>
+    <p>Typical searches and store copy:</p>
+    <ul>
+      <li><em>Time Out requires macOS 26.0 or later</em></li>
+      <li><em>Time Out now requires a minimum of macOS Tahoe (26.0)</em></li>
+      <li>Mac App Store: this Mac does not meet the system requirement</li>
+      <li>After an update, the app will not open on Sequoia</li>
+    </ul>
+    <p>Dejal’s own site says the latest is <strong>3.1</strong> and <strong>Requires macOS 26.0 or later</strong>. The <a href="https://apps.apple.com/us/app/time-out-break-reminders/id402592703?mt=12">Mac App Store listing</a> says the same in What’s New. Direct download of <strong>2.9.7</strong> is still offered for macOS 10.15 or later: <a href="https://www.dejal.com/timeout/">dejal.com/timeout</a>.</p>
+
+    <h2>Why it happens</h2>
+    <p>Time Out 3 was rebuilt around Tahoe (Liquid Glass, new theme editor, modern icons). Apple lets a Mac App Store listing raise its minimum OS. When that happens, the product page on a Sequoia Mac simply refuses the install. It is not Gatekeeper, and it is not your Apple ID.</p>
+    <p>If you already paid for Time Out on the store, you still own 2.x on that Apple ID <em>if</em> you kept a local copy. The store will not hand you 3.x on an older OS. Direct 2.9.7 is the supported escape hatch Dejal publishes.</p>
+
+    <h2>If you want to stay on Time Out</h2>
+    <ol>
+      <li>Stay on Sequoia: download <strong>2.9.7</strong> from Dejal. Do not update to 3.1.</li>
+      <li>Already on Tahoe: 3.1 from the site or the store is the current line.</li>
+      <li>Direct vs store vs Setapp editions differ in sandbox and extras. Dejal documents that separately. The OS floor is the part that strands Sequoia users.</li>
+    </ol>
+    <p>Time Out is a twenty-year Mac app. This page is not a eulogy. It is for people who googled the requirement string and still need a break overlay this week.</p>
+
+    <h2>If you need a signed overlay on macOS 14.6–15</h2>
+    <p><strong>Up2Reset</strong> is a native Swift menu bar sit reminder. System requirement is <strong>macOS 14.6+</strong>, not 26.</p>
+    <ul>
+      <li>Full-screen overlay on every display. The job is stand up, not a 20-second eye rest.</li>
+      <li>Mac App Store signed. No unidentified-developer prompt.</li>
+      <li>Sleep and lock pause the timer. Pro adds keyboard/mouse idle so coming back from lunch does not immediately cover the screen.</li>
+      <li>Skip postpones; it does not cancel the rest of the day.</li>
+      <li>No account. No analytics SDK. Reports stay on the Mac.</li>
+    </ul>
+    <p>Live listing name is still <strong>Up2Stretch</strong> (1.2.1). 1.3.0 is in review and renames it to Up2Reset. Same app, bundle id <code>com.tool.Up2Stretch</code>, Apple ID 6447865036.</p>
+    <div class="article-cta">
+      <a class="btn btn-primary" href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12&amp;ct=seo-timeout">Get Up2Reset on the Mac App Store</a>
+      <a class="btn" href="/guide/" style="background:#fff;color:inherit;border:1px solid var(--line)">How to use it</a>
+    </div>
+    <p class="note">Free overlay. Custom intervals and idle detection are Pro.</p>
+
+    <h2>Came from Stretchly instead?</h2>
+    <p>Unsigned Electron + a disabled Homebrew cask is a different failure: <a href="/stretchly-cannot-be-opened/">Stretchly cannot be opened on Mac</a>.</p>
+
+    <p class="source">Sources: <a href="https://www.dejal.com/timeout/">Dejal Time Out</a> (3.1 / macOS 26, 2.9.7 / 10.15+) · <a href="https://apps.apple.com/us/app/time-out-break-reminders/id402592703?mt=12">Time Out on the Mac App Store</a>. Time Out remains a peer. This page answers the OS-floor query.</p>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Up2Reset</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/stretchly-cannot-be-opened/">Stretchly Gatekeeper</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

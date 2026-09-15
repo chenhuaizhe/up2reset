@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stretchly cannot be opened on Mac — unsigned app, Homebrew cask disabled</title>
+  <meta name="description" content="macOS blocks Stretchly because it is unsigned. The official Homebrew cask is disabled. What the Gatekeeper alert means, how to open it anyway, and a signed native overlay alternative.">
+  <link rel="canonical" href="https://up2reset.com/stretchly-cannot-be-opened/">
+  <link rel="alternate" hreflang="en" href="https://up2reset.com/stretchly-cannot-be-opened/">
+  <link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/stretchly-cannot-be-opened/">
+  <link rel="alternate" hreflang="x-default" href="https://up2reset.com/stretchly-cannot-be-opened/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Stretchly cannot be opened on Mac">
+  <meta property="og:description" content="The Gatekeeper alert is real: Stretchly is unsigned, and Homebrew’s official cask is disabled. Here is why, and a signed native sit-break overlay.">
+  <meta property="og:url" content="https://up2reset.com/stretchly-cannot-be-opened/">
+  <meta property="og:image" content="https://up2reset.com/assets/icon.png">
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Stretchly cannot be opened on Mac",
+    "description": "Why macOS Gatekeeper blocks Stretchly, why the Homebrew cask is disabled, and a signed native alternative.",
+    "url": "https://up2reset.com/stretchly-cannot-be-opened/",
+    "author": { "@type": "Person", "name": "Yuan Chen" },
+    "publisher": { "@type": "Organization", "name": "Up2Reset" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap topbar">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" width="36" height="36" alt="">
+      Up2Reset
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/guide/">Guide</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/zh/stretchly-cannot-be-opened/">Chinese</a>
+      <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+      <a href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12&amp;ct=seo-stretchly">Mac App Store</a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap prose">
+    <p class="crumbs"><a href="/">Up2Reset</a> / Stretchly on Mac</p>
+    <div class="page-hero">
+      <h1>Stretchly cannot be opened on Mac</h1>
+      <p class="lede">The alert is Gatekeeper, not a broken download. Stretchly is unsigned. Homebrew’s official cask is disabled. You can still run it with a workaround — or install a signed native overlay from the Mac App Store.</p>
+    </div>
+
+    <h2>What you are seeing</h2>
+    <p>On first launch macOS shows some version of:</p>
+    <ul>
+      <li><em>“Stretchly” cannot be opened because the developer cannot be verified.</em></li>
+      <li><em>macOS cannot verify that this app is free from malware.</em></li>
+      <li>Apple silicon: a quarantine error until you strip the attribute in Terminal.</li>
+    </ul>
+    <p>That is <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac">Gatekeeper</a> doing its job. Stretchly’s author documents it: the app is <strong>not signed</strong> (Apple Developer signing costs money, and they do not ship a signed Mac build). Official notes: <a href="https://hovancik.net/stretchly/downloads/">Stretchly downloads</a>.</p>
+
+    <h2>Why it happens</h2>
+    <p>Three separate facts, often mixed together:</p>
+    <ol>
+      <li><strong>Unsigned binary.</strong> Notarized Mac apps skip this prompt. Stretchly does not.</li>
+      <li><strong>Electron.</strong> It is a cross-platform tray app. Fine on Linux. On a Mac you pay for a Chromium runtime just to get a break window, and you inherit Gatekeeper friction the native menu-bar apps never have.</li>
+      <li><strong>Homebrew official cask is disabled.</strong> <code>brew install --cask stretchly</code> from the default tap fails Homebrew’s Gatekeeper check. The formulae page is marked <strong>disabled</strong> (<a href="https://formulae.brew.sh/cask/stretchly">formulae.brew.sh/cask/stretchly</a>). The maintainer’s own tap still exists; the one-liner most people copy does not.</li>
+    </ol>
+    <p>None of this means Stretchly is malware. It means the install path that used to be “one brew command” is now a support ticket.</p>
+
+    <h2>If you want to keep Stretchly</h2>
+    <p>Use the author’s path, not random “disable Gatekeeper” blog posts:</p>
+    <ol>
+      <li>Download from <a href="https://github.com/hovancik/stretchly/releases">GitHub Releases</a> or the <a href="https://hovancik.net/stretchly/downloads/">official downloads page</a>.</li>
+      <li>Intel: System Settings → Privacy &amp; Security → Open Anyway next to the Stretchly alert. Or Control-click the app in Finder → Open.</li>
+      <li>Apple silicon: the downloads page still documents <code>xattr -r -d com.apple.quarantine</code> on the .app. That is a quarantine bypass, not a signature.</li>
+      <li>Homebrew: if you insist, use the fully qualified tap the author names on the downloads page. Do not expect the default cask to work.</li>
+    </ol>
+    <p>Skip is still <span class="kbd">⌘X</span> after a postpone. That is the other complaint people bring to Reddit after they get it running.</p>
+
+    <h2>If the job is “cover the screen until I stand up”</h2>
+    <p>Stretchly’s job is real. The Mac packaging is the part that failed. <strong>Up2Reset</strong> is a native Swift menu bar timer that does that job without Gatekeeper:</p>
+    <ul>
+      <li>Signed Mac App Store build. No Open Anyway. No <code>xattr</code>.</li>
+      <li>Full-screen overlay on every display, including hot-plug mid-break.</li>
+      <li>No Accessibility permission. Idle detection (Pro) uses the system idle clock, not a global event tap.</li>
+      <li>No account, no analytics SDK. Settings stay on the Mac.</li>
+      <li>macOS 14.6+ (Sonoma). You do not need Tahoe.</li>
+    </ul>
+    <p>Live listing name is still <strong>Up2Stretch</strong> (1.2.1). 1.3.0 is in review and renames it to Up2Reset. Same bundle id <code>com.tool.Up2Stretch</code>, Apple ID 6447865036.</p>
+    <div class="article-cta">
+      <a class="btn btn-primary" href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12&amp;ct=seo-stretchly">Get Up2Reset on the Mac App Store</a>
+      <a class="btn" href="/guide/" style="background:#fff;color:inherit;border:1px solid var(--line)">How to use it</a>
+    </div>
+    <p class="note">Free to start. Overlay is not behind Pro.</p>
+
+    <h2>Also stuck on Time Out?</h2>
+    <p>Time Out 3.1 on the store and the current direct build require <strong>macOS 26</strong>. Sequoia users are on 2.9.7. Separate page: <a href="/time-out-requires-macos-26/">Time Out requires macOS 26</a>.</p>
+
+    <p class="source">Sources: <a href="https://hovancik.net/stretchly/downloads/">Stretchly downloads / signing</a> · <a href="https://formulae.brew.sh/cask/stretchly">Homebrew cask (disabled)</a> · <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac">Apple: unidentified developer</a>. Stretchly is a good OSS project. This page exists because the Mac install is the thing people actually search.</p>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Up2Reset</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/time-out-requires-macos-26/">Time Out / macOS 26</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -114,5 +114,6 @@ Queries this page is meant to answer:
 - menu bar break timer Mac
 - full screen stretch overlay macOS
 - Stretchly alternative native
-- Time Out app Mac alternative
+- Stretchly cannot be opened / unidentified developer / Homebrew stretchly disabled
+- Time Out app Mac alternative / Time Out requires macOS 26
 - local-only break reminder, no account

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stretchly 在 Mac 上无法打开：未签名，Homebrew cask 已停用</title>
+  <meta name="description" content="macOS 拦截 Stretchly 是因为应用未签名。官方 Homebrew cask 已 disabled。Gatekeeper 提示是什么意思、怎么强行打开，以及一个已签名的原生全屏遮罩替代。">
+  <link rel="canonical" href="https://up2reset.com/zh/stretchly-cannot-be-opened/">
+  <link rel="alternate" hreflang="en" href="https://up2reset.com/stretchly-cannot-be-opened/">
+  <link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/stretchly-cannot-be-opened/">
+  <meta property="og:title" content="Stretchly 在 Mac 上无法打开">
+  <meta property="og:description" content="未签名 + 官方 brew cask 已停用。这是 Gatekeeper，不是下载坏了。">
+  <meta property="og:url" content="https://up2reset.com/zh/stretchly-cannot-be-opened/">
+  <meta property="og:image" content="https://up2reset.com/assets/icon.png">
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="wrap topbar">
+    <a class="brand" href="/zh/">
+      <img src="/assets/icon.png" width="36" height="36" alt="">
+      Up2Reset
+    </a>
+    <nav class="nav">
+      <a href="/zh/guide/">教程</a>
+      <a href="/zh/faq/">常见问题</a>
+      <a href="/stretchly-cannot-be-opened/">English</a>
+      <a href="https://github.com/chenhuaizhe/up2reset">GitHub</a>
+      <a href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12&amp;ct=seo-stretchly">Mac App Store</a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap prose">
+    <p class="crumbs"><a href="/zh/">Up2Reset</a> / Stretchly on Mac</p>
+    <div class="page-hero">
+      <h1>Stretchly 在 Mac 上无法打开</h1>
+      <p class="lede">这是 Gatekeeper，不是安装包坏了。Stretchly 未签名。Homebrew 官方 cask 已停用。你可以按作者的方法强行打开，也可以装 Mac App Store 里已签名的原生遮罩。</p>
+    </div>
+
+    <h2>你看到的是什么</h2>
+    <p>第一次打开时常是这几句：</p>
+    <ul>
+      <li>「Stretchly」无法打开，因为无法验证开发者。</li>
+      <li>macOS 无法验证此 App 是否包含恶意软件。</li>
+      <li>Apple 芯片上还要清 quarantine 才能启动。</li>
+    </ul>
+    <p>这是 <a href="https://support.apple.com/zh-cn/guide/mac-help/mh40616/mac">Gatekeeper</a>。作者自己写了：应用<strong>没有签名</strong>（苹果开发者签名要钱，他们不发签过名的 Mac 包）。说明在 <a href="https://hovancik.net/stretchly/downloads/">Stretchly downloads</a>。</p>
+
+    <h2>为什么会这样</h2>
+    <ol>
+      <li><strong>未签名。</strong> 经过公证的 Mac 应用不会弹这窗。</li>
+      <li><strong>Electron。</strong> 跨平台托盘应用，在 Mac 上要背一整套 Chromium，还要自己处理 Gatekeeper。</li>
+      <li><strong>官方 brew cask 已停用。</strong> 默认 tap 的 <code>brew install --cask stretchly</code> 过不了 Homebrew 的 Gatekeeper 检查。公式页标了 <strong>disabled</strong>（<a href="https://formulae.brew.sh/cask/stretchly">formulae.brew.sh/cask/stretchly</a>）。作者自己的 tap 还在，大家复制的那一行不行了。</li>
+    </ol>
+    <p>这不表示 Stretchly 是恶意软件。表示「一行 brew 装上」这条路已经断了。</p>
+
+    <h2>还想继续用 Stretchly</h2>
+    <ol>
+      <li>从 <a href="https://github.com/hovancik/stretchly/releases">GitHub Releases</a> 或<a href="https://hovancik.net/stretchly/downloads/">官网下载页</a>装。</li>
+      <li>Intel：系统设置 → 隐私与安全性 → 仍要打开。或在 Finder 里按住 Control 点图标 → 打开。</li>
+      <li>Apple 芯片：下载页写了用 <code>xattr -r -d com.apple.quarantine</code> 清隔离属性。这是绕过隔离，不是签名。</li>
+      <li>Homebrew：用作者写明的完整 tap 名。不要指望默认 cask。</li>
+    </ol>
+    <p>跑起来之后，推迟结束仍可用 <span class="kbd">⌘X</span> 跳过。Reddit 上第二常见的抱怨是这个。</p>
+
+    <h2>如果任务是「挡住屏幕直到我站起来」</h2>
+    <p>Stretchly 要做的事没变，坏的是 Mac 安装路径。<strong>Up2Reset</strong> 是原生 Swift 菜单栏计时器：</p>
+    <ul>
+      <li>Mac App Store 签名，不用「仍要打开」，不用 <code>xattr</code>。</li>
+      <li>所有显示器全屏遮罩，热插拔会重建。</li>
+      <li>不要辅助功能权限。闲置检测（Pro）读系统闲置时钟，不是全局监听。</li>
+      <li>无账号、无分析 SDK。设置只在这台 Mac。</li>
+      <li>系统要求 macOS 14.6+，不需要 Tahoe。</li>
+    </ul>
+    <p>商店现用名仍是 <strong>Up2Stretch</strong>（1.2.1）。1.3.0 审核中，会把 listing 改成 Up2Reset。Bundle ID 仍是 <code>com.tool.Up2Stretch</code>，Apple ID 6447865036。</p>
+    <div class="article-cta">
+      <a class="btn btn-primary" href="https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12&amp;ct=seo-stretchly">在 Mac App Store 获取</a>
+      <a class="btn" href="/zh/guide/" style="background:#fff;color:inherit;border:1px solid var(--line)">怎么用</a>
+    </div>
+    <p class="note">免费可用。遮罩不锁 Pro。</p>
+
+    <h2>卡在 Time Out 上？</h2>
+    <p>Time Out 3.1 商店版和当前直装都要 <strong>macOS 26</strong>。Sequoia 只能停在 2.9.7。另页：<a href="/zh/time-out-requires-macos-26/">Time Out 需要 macOS 26</a>。</p>
+
+    <p class="source">来源：<a href="https://hovancik.net/stretchly/downloads/">Stretchly 下载与签名说明</a> · <a href="https://formulae.brew.sh/cask/stretchly">Homebrew cask（已停用）</a> · <a href="https://support.apple.com/zh-cn/guide/mac-help/mh40616/mac">Apple：无法验证的开发者</a>。Stretchly 仍是好用的开源项目。这页只回答 Mac 装不上这件事。</p>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Up2Reset</p>
+      <nav>
+        <a href="/zh/">首页</a>
+        <a href="/zh/faq/">常见问题</a>
+        <a href="/zh/time-out-requires-macos-26/">Time Out / macOS 26</a>
+        <a href="/zh/support/">支持</a>
+        <a href="/zh/privacy/">隐私</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

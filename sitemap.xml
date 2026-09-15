@@ -50,4 +50,24 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/support/"/>
   </url>
+  <url>
+    <loc>https://up2reset.com/stretchly-cannot-be-opened/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/stretchly-cannot-be-opened/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/stretchly-cannot-be-opened/"/>
+  </url>
+  <url>
+    <loc>https://up2reset.com/zh/stretchly-cannot-be-opened/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/stretchly-cannot-be-opened/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/stretchly-cannot-be-opened/"/>
+  </url>
+  <url>
+    <loc>https://up2reset.com/time-out-requires-macos-26/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/time-out-requires-macos-26/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/time-out-requires-macos-26/"/>
+  </url>
+  <url>
+    <loc>https://up2reset.com/zh/time-out-requires-macos-26/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://up2reset.com/time-out-requires-macos-26/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://up2reset.com/zh/time-out-requires-macos-26/"/>
+  </url>
 </urlset>
