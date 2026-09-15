@@ -102,7 +102,7 @@ No. Local on purpose. No iCloud sync.
 
 ## Support
 
-[up2reset.com/support](https://up2reset.com/support/) · [FAQ](https://up2reset.com/faq/) · email [chenhuaizhe@gmail.com](mailto:chenhuaizhe@gmail.com)
+[up2reset.com/support](https://up2reset.com/support/) · [FAQ](https://up2reset.com/faq/) · email [nine@bigbeefit.com](mailto:nine@bigbeefit.com)
 
 Include macOS version, app version, and what happened.
 
