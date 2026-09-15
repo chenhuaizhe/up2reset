@@ -24,7 +24,7 @@ People on a Mac who:
 
 ## What you get
 
-- Menu bar timer with pause / continue / reset
+- Menu bar timer with pause / continue / restart
 - Full-screen break overlay on every monitor
 - Optional pre-break notification
 - Skip, then get reminded again
