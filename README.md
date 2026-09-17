@@ -4,7 +4,7 @@ macOS menu bar app that covers every screen when you have been sitting too long.
 
 Sit. Forget. Overlay. Stand up. Reset. Continue.
 
-**Download:** [Mac App Store](https://apps.apple.com/us/app/up2stretch/id6447865036?mt=12) (live listing is still **Up2Stretch 1.2.1**; **1.3.0** is in review and will rename it to Up2Reset)  
+**Download:** [Mac App Store](https://apps.apple.com/us/app/up2reset/id6447865036?mt=12) (**Up2Reset 1.3.0**)  
 **Site:** [up2reset.com](https://up2reset.com) · [How to use](https://up2reset.com/guide/)  
 **This repo is the public product page**, not the private app source.
 
@@ -35,7 +35,7 @@ People on a Mac who:
 - Custom overlay background and opacity (since 1.2.1)
 - Pro: custom intervals, any break length 1–60 min, idle detection, 7-day / 30-day / this-year **local** reports
 
-**1.3.0 (in App Store review, not live yet):** listing name Up2Reset, bedtime reminder (Not Now does not cut the current focus), menu bar scratch notes, optional 3-second hold on Skip / I moved, extra languages (en, zh-Hans, zh-Hant, ja, ko, de, fr, es). These are not Pro-gated.
+**1.3.0 (live):** listing name Up2Reset, bedtime reminder (Not Now does not cut the current focus), menu bar scratch notes, optional 3-second hold on Skip / I moved, extra languages (en, zh-Hans, zh-Hant, ja, ko, de, fr, es). These are not Pro-gated.
 
 Privacy default: no account, no analytics SDK, no Accessibility permission. Idle detection uses the system idle clock.
 
@@ -57,9 +57,9 @@ No. Do not grant it.
 
 Stretchly is Electron. Time Out is a peer. Up2Reset is native, overlay-first, local-only. Apple Watch Stand rings count standing hours; they will not cover your editor.
 
-### Why does the App Store say Up2Stretch?
+### Why was the App Store listing named Up2Stretch?
 
-Same app. Bundle id `com.tool.Up2Stretch`, Apple ID `6447865036`. This brand is Up2Reset. Live store is still 1.2.1 named Up2Stretch; 1.3.0 is in review and will rename the listing.
+Same app. Bundle id `com.tool.Up2Stretch`, Apple ID `6447865036`. The live listing is Up2Reset as of 1.3.0. In-app products may still show the old Up2Stretch Pro name.
 
 ### What macOS version?
 
@@ -83,7 +83,7 @@ Yes, since 1.2.1: custom background image and opacity.
 
 ### What is in 1.3.0?
 
-In review, not on the store yet. Rename to Up2Reset, bedtime reminder, menu-bar scratch notes, optional hold on Skip / I moved, more languages. None of that is Pro.
+Live. Rename to Up2Reset, bedtime reminder, menu-bar scratch notes, optional hold on Skip / I moved, more languages. None of that is Pro.
 
 ### Will reports follow me to a new Mac?
 
